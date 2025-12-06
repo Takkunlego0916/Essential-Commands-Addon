@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+      "name": "RE:キノキノ鯖ScriptPack",
+      "description": "RE:キノキノ鯖用Script",
+      "uuid": "b15e5b57-381f-4bb7-9bbb-6d58ae4c863b",
+      "version": [0, 1, 0],
+      "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+      {
+        "type": "script",
+        "language": "javascript",
+        "uuid": "a197760a-badf-4110-88ce-d15b121050e4",
+        "entry": "scripts/main.js",
+        "version": [0, 1, 0]
+      }
+    ],
+    "capabilities": ["script_eval"],
+    "dependencies": [
+    {
+    "module_name": "@minecraft/server",
+    "version": "2.1.0"
+    },
+	{
+    "module_name": "@minecraft/server-ui",
+    "version": "2.0.0"
+    }
+  ]
+}
