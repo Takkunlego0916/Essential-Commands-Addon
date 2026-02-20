@@ -3,7 +3,7 @@ import * as ui from "@minecraft/server-ui";
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:lobby",
+        name:"ec:lobby",
         description:"ロビーにテレポートします",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -19,7 +19,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:hub",
+        name:"ec:hub",
         description:"ロビーにテレポートします",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -35,7 +35,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:spawn",
+        name:"ec:spawn",
         description:"スポーン地点にテレポートします",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -51,7 +51,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:rtp",
+        name:"ec:rtp",
         description:"ランダムな座標にテレポートします",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -67,7 +67,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:help",
+        name:"ec:help",
         description:"コマンド一覧を表示します",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -83,7 +83,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:version",
+        name:"ec:version",
         description:"アドオンのバージョンを表示します",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -99,7 +99,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:staff",
+        name:"ec:staff",
         description:"このサーバーの管理者を表示します",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -115,7 +115,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:rule",
+        name:"ec:rule",
         description:"ルールを閲覧できます",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -129,7 +129,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 function show_form(player){
     const form = new ui.ActionFormData();
-    form.title("RE:キノキノ鯖総合");
+    form.title("Essential Commands");
     form.button("ルールを見る");
     form.button("ロビーにテレポート");
     form.button("コマンド一覧");
@@ -189,7 +189,7 @@ server.world.afterEvents.itemUse.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:menu",
+        name:"ec:menu",
         description:"棒メニューを表示します",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
@@ -203,7 +203,7 @@ server.system.beforeEvents.startup.subscribe(ev => {
 
 server.system.beforeEvents.startup.subscribe(ev => {
     ev.customCommandRegistry.registerCommand({
-        name:"rekinokino:report",
+        name:"ec:report",
         description:"レポートを送信します",
         permissionLevel : server.CommandPermissionLevel.Any,
         mandatoryParameters:[
