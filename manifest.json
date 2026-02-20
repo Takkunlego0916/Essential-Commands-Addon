@@ -1,9 +1,9 @@
 {
     "format_version": 2,
     "header": {
-      "name": "RE:キノキノ鯖ScriptPack",
-      "description": "RE:キノキノ鯖用Script",
-      "uuid": "b15e5b57-381f-4bb7-9bbb-6d58ae4c863b",
+      "name": "Essential Commands",
+      "description": "BDSサーバー向けコマンドパック",
+      "uuid": "ece279a8-9177-427c-ad2c-0bfa77fa62e0",
       "version": [0, 1, 0],
       "min_engine_version": [1, 20, 0]
     },
@@ -11,7 +11,7 @@
       {
         "type": "script",
         "language": "javascript",
-        "uuid": "a197760a-badf-4110-88ce-d15b121050e4",
+        "uuid": "e5279650-5655-40c9-aa51-a647e1b4bd24",
         "entry": "scripts/main.js",
         "version": [0, 1, 0]
       }
